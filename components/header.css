@@ -1,0 +1,110 @@
+header {
+  background-image: url(/images/desktop/image-hero.jpg);
+  background-size: cover;
+  height: 80vh;
+  padding: var(--container-padding);
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+}
+li a {
+  text-decoration: none;
+  padding: 1em;
+  color: white;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.header-title h1 {
+  color: white;
+  margin-top: 3em;
+  border: 5px solid white;
+  width: 40%;
+  font-size: 3.7rem;
+  padding: 0.7em;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.header-menu {
+  display: none;
+}
+
+@media (max-width: 1536px) {
+  header {
+    padding: 3em;
+  }
+  .header-title h1 {
+    width: 45%;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1280px) {
+  .header-title h1 {
+    width: 45%;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    background-image: url(/images/mobile/image-hero.jpg);
+    background-size: cover;
+    height: 95vh;
+    padding: 3em;
+  }
+
+  .header-logo img {
+    width: 65%;
+  }
+
+  .navigation li a {
+    padding: 0.5em;
+    font-size: 0.8rem;
+  }
+
+  .header-title h1 {
+    width: 60%;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation li a {
+    display: none;
+  }
+
+  .header-title h1 {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+  .header-menu {
+    display: block;
+    color: white;
+    position: absolute;
+    right: 3em;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 640px) {
+  header {
+    padding: 1em;
+  }
+
+  .header-menu {
+    right: 1em;
+  }
+}
